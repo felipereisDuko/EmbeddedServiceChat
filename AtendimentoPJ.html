@@ -1,5 +1,5 @@
 <html>
- <style type='text/css'>
+<style type='text/css'>
 	.embeddedServiceHelpButton .helpButton .uiButton {
 		background-color: #005290;
 		font-family: "Arial", sans-serif;
@@ -34,25 +34,25 @@
 		embedded_svc.settings.entryFeature = 'LiveAgent';
 
 		embedded_svc.init(
-			'https://nubbi--devduko.sandbox.my.salesforce.com',
-			'https://nubbi--devduko.sandbox.my.salesforce-sites.com/liveAgentSetupFlow',
+			'https://nubbi.my.salesforce.com',
+			'https://nubbi.my.salesforce-sites.com/liveAgentSetupFlow',
 			gslbBaseURL,
-			'00DDR000000qDvb',
-			'Atendimento_PJ',
+			'00DDn00000CWdVh',
+			'Atendimento_PF',
 			{
-				baseLiveAgentContentURL: 'https://c.la1-c1cs-ia7.salesforceliveagent.com/content',
+				baseLiveAgentContentURL: 'https://c.la1-c1-ia7.salesforceliveagent.com/content',
 				deploymentId: '572Dn000000MMUG',
-				buttonId: '573DR0000004Ppy',
-				baseLiveAgentURL: 'https://d.la1-c1cs-ia7.salesforceliveagent.com/chat',
-				eswLiveAgentDevName: 'Grupo_Fila_PJ',
-				isOfflineSupportEnabled: false
+				buttonId: '573Dn000000MMfV',
+				baseLiveAgentURL: 'https://d.la1-c1-ia7.salesforceliveagent.com/chat',
+				eswLiveAgentDevName: 'Atendimento_Nubbi',
+				isOfflineSupportEnabled: true
 			}
 		);
 	};
 
 	if (!window.embedded_svc) {
 		var s = document.createElement('script');
-		s.setAttribute('src', 'https://nubbi--devduko.sandbox.my.salesforce.com/embeddedservice/5.0/esw.min.js');
+		s.setAttribute('src', 'https://nubbi.my.salesforce.com/embeddedservice/5.0/esw.min.js');
 		s.onload = function() {
 			initESW(null);
 		};
